@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="hamburger">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <header>
+        <div class="logo">Portfolio</div>
+        <nav class="navbar">
+            <a href="#!" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skill.html">Skills</a>
+            <a href="#!">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- hamburger for mobile screen -->
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <div class="home-content-inner">
+                <h3>Hello,it's Me</h3>
+                <h1>Nihal Singh</h1>
+                <h3>And I'm a <span>Fronted Developer</span></h3>
+                <p>I am on a journey to becoming a full stack developer.<br>
+                    I love to play with code and love to unravel trends<br>
+                    in data,visualize it and predict the <br>
+                    future with website development. </p>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://twitter.com/nihalkumar7801?t=Uq81rlYgWRMytQtsCRvnmA&s=09"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://www.linkedin.com/in/nihal-kumar-4730b7252"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://youtube.com/@NihalDeva7801"><i class='bx bxl-youtube'></i></a>
+                </div>
+                <a href="./pdf/Resume bca.pdf" class="btw">Download CV</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/photo_2023-10-13_12-16-04-removebg-preview.png" width="500px" height="650px">
+        </div>
+    </section>
+
+    <!-- below mobile screen navbar by default display none, it display block when screen size is 846px -->
+    <div class="mobile-screen-navbar">
+        <ul>
+            <li><a href="#!" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#!">Skills</a></li>
+            <li><a href="#!">Portfolio</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1f242d;
+
+        }
+
+        .myclass {
+            width: 100%;
+            /* border: 2px solid blueviolet; */
+            color: #0ef;
+            margin-top: 50px;
+            justify-content: center;
+            text-align: center;
+            /* padding-top: 30px; */
+            /* font-size: 50px; */
+
+        }
+
+        h1 {
+            display: block;
+            font-size: 2.5em;
+            /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+            font-weight: bold;
+        }
+
+        .myclass p {
+            color: gold;
+
+        }
+
+        .container {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .first {
+            width: 40%;
+            /* border: 2px solid yellow;  */
+            text-align: center;
+        }
+
+        .design {
+            padding-top: 20px;
+        }
+
+        .design h3 {
+            color: #0ef;
+        }
+
+        .design p {
+            color: white;
+        }
+
+        .technology {
+            padding-top: 40px;
+        }
+
+        .technology h3 {
+
+            color: #0ef;
+        }
+
+        .technology p {
+            color: white;
+        }
+
+        .respons {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .respons h3 {
+            color: #0ef;
+        }
+
+        .respons p {
+            color: white;
+        }
+
+        .second {
+            width: 48%;
+            margin-right: 50px;
+
+        }
+
+        .a1 {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            margin-top: 20px;
+            border-radius: 5px;
+            justify-content: space-between;
+
+        }
+
+        .html {
+            width: 80%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: mymove 5s infinite;
+
+
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 130px;
+            }
+        }
+
+        .a2 {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between;
+
+        }
+
+        .css {
+            width: 60%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: css 5s infinite;
+        }
+
+        @keyframes css {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 260px;
+            }
+        }
+
+        .a3 {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between;
+
+        }
+
+        .js {
+            width: 40%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: js 5s infinite;
+
+        }
+
+        @keyframes js {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 388px;
+            }
+        }
+
+        .a4 {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between;
+
+        }
+
+        .java {
+            width: 60%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: java 5s infinite;
+
+        }
+
+        @keyframes java {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 258px;
+            }
+        }
+
+        .a5 {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between;
+
+        }
+
+        .cp {
+            width: 70%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: cp 5s infinite;
+
+        }
+
+        @keyframes cp {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 195px;
+            }
+        }
+
+        .a6 {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between;
+
+        }
+
+        .c {
+            width: 60%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: c 5s infinite;
+
+        }
+
+        @keyframes c {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 255px;
+            }
+        }
+
+        .a7 {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: space-between;
+        }
+
+        .sql {
+            width: 30%;
+            background-color: #0ef;
+            padding-left: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: sql 5s infinite;
+
+        }
+
+        @keyframes sql {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 455px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myclass">
+
+        <h1>My Skills</h1>
+        <p>I Like to craft beautiful and scalable web products</p>
+    </div>
+    <div class="container">
+        <div class="first">
+            <div class="design">
+                <h3>Development + Design</h3>
+                <p>Design,Search engines,and Converting <br>users to customers</p>
+            </div>
+            <div class="technology">
+                <h3>Technology</h3>
+                <p>Combined all the Latest technologies<br> to a progressive website.</p>
+
+            </div>
+            <div class="respons">
+                <h3>Always Responsive</h3>
+                <p>A responsive design makes your websites <br>accessible to all users,regardless<br> of their device.
+                </p>
+            </div>
+
+
+        </div>
+        <div class="second">
+            <div class="a1">
+                <div class="html">
+                    <h2>HTML</h2>
+                </div>
+                <h3>80%</h3>
+            </div>
+            <div class="a2">
+                <div class="css">
+                    <h2>CSS</h2>
+                </div>
+                <h3>60%</h3>
+            </div>
+            <div class="a3">
+                <div class="js">
+                    <h2>JAVA SCRIPT</h2>
+                </div>
+                <h3>40%</h3>
+            </div>
+            <div class="a4">
+                <div class="java">
+                    <h2>JAVA</h2>
+                </div>
+                <h3>60%</h3>
+            </div>
+            <div class="a5">
+                <div class="cp">
+                    <h2>C++</h2>
+                </div>
+                <h3>70%</h3>
+            </div>
+            <div class="a6">
+                <div class="c">
+                    <h2>C</h2>
+                </div>
+                <h3>60%</h3>
+            </div>
+            <div class="a7">
+                <div class="sql">
+                    <h2>MySql</h2>
+                </div>
+                <h3>20%</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="nihal">
+        <h2>About <span>Me</span></h2>
+        <div class="main1">
+            <div class="pic">
+                <img src="images/desktop-2-2-removebg-preview.png" width="500" height="500">
+            </div>
+            <div class="note">
+
+                <p>
+                    I am a front-end web developer.I can <br>provide clean code and pixel perfect<br> design. I also
+                    make the
+                    website more<br> & more interactive with web animations.<br>A responsive design makes
+                    your website<br>accessible to all users.
+                </p>
+                <a href="#">Lets talk</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<div class="cont">Contact <span>Me</span></div>
+<div class="main">
+   
+    <div class="firstdiv">
+        <div class="first-div">
+            <div class="photo">
+                <img src="images/pngtree-handset-related-vector-glyph-icon-web-call-sign-vector-picture-image_10382512-removebg-preview.png"
+                    width="120" height="110">
+            </div>
+            <div class="phone">
+                <h4>Phone Nu</h4>
+            </div>
+            <div class="number">
+                <h4>7004433769</h4>
+            </div>
+        </div>
+        <div class="second-div">
+            <div class="email">
+                <img src="images/images-removebg-preview.png" width="200" height="100">
+            </div>
+            <div class="my-email">
+                <h3>nihalkumar7801@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+    <div class="seconddiv">
+        <div class="name">
+            <label>Full Name</label><br>
+            <input type="text" class="field" placeholder="Your name">
+        </div><br>
+        <div class="email">
+            <label>Your Email</label><br>
+            <input type="email" class="field" placeholder="enter your email">
+        </div><br>
+        <div class="message">
+            <label>Message</label><br>
+            <textarea type="text" class="field" placeholder="any message"></textarea>
+        </div>
+        <div class="send-button">
+            <button>Send me</button>
+        </div>
+        
+
+    </div>
+</div>
+</body>
+<footer>
+    <div class="logon">
+        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+    </div>
+
+</footer>
+<div class="space">
+
+</div>
+</html>

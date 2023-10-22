@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-color: #1f242d;
+            height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            width: 99%;
+            height: 15%;
+
+        }
+
+        .name {
+            width: auto;
+            height: auto;
+            padding-top: 25px;
+            padding-left: 30px;
+            font-size: 40px;
+            color: #0ef;
+
+        }
+
+        span {
+            color: gold;
+        }
+
+        .main1 {
+            width: 80%;
+            height: 70%;
+
+            margin-top: 3%;
+            margin-left: 10%;
+
+            display: flex;
+
+        }
+
+        .pic {
+            width: 40%;
+            height: 100%;
+
+        }
+
+        .note {
+            width: 60%;
+            height: 100%;
+
+        }
+
+        .note h2 {
+            font-size: 40px;
+            color: #0ef;
+            padding-top: 30px;
+
+        }
+
+        .note p {
+            font-style: italic;
+            font-weight: 200;
+            font-size: 20px;
+            color: gold;
+            padding-top: 20px;
+        }
+
+        .note a {
+            text-decoration: none;
+
+            font-size: 40px;
+            color: #0ef;
+            display: inline-block;
+            border-radius: 5px;
+            border: 2px solid #0ef;
+           padding: 0px 20px;
+           text-transform: capitalize;
+            margin-top: 20px;
+        }
+
+        .note a:hover {
+            color: gold;
+            box-shadow: 0 0 50px gold;
+            animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+            animation-delay: 2s, 3s;
+        }
+        @media screen and (max-width: 840px){
+            .pic{
+                display: none;
+            }
+            header {
+            width: 99%;
+            height: 15%;
+
+        }
+
+        .name {
+            width: auto;
+            height: auto;
+            padding-top: 25px;
+            padding-left: 30px;
+            /* font-size: 40px; */
+            color: #0ef;
+
+        }
+
+        span {
+            color: gold;
+        }
+        .note {
+            width: 60%;
+            height: 100%;
+
+        }
+
+        .note h2 {
+            font-size: 30px;
+            color: #0ef;
+            padding-top: 30px;
+
+        }
+        .note p {
+            /* font-style: italic; */
+            font-weight: 200;
+            font-size: 20px;
+            color: white;
+            padding-top: 20px;
+        }
+ 
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <div class="name">
+                <h2>About <span>Me</span></h2>
+            </div>
+        </header>
+        <div class="main1">
+            <div class="pic">
+                <img src="images/desktop-2-2-removebg-preview.png" width="400" height="450">
+            </div>
+            <div class="note">
+                <h2>Developer & Designer</h2>
+                <p>
+                    I am a front-end web developer.I can <br>provide clean code and pixel perfect<br> design. I also
+                    make the
+                    website more<br> & more interactive with web animations.<br>A responsive design makes
+                    your website<br>accessible to all users.
+                </p>
+                <a href="#">Lets talk</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

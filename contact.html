@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #1f242d;
+
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        height: 20vh;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .logo {
+        display: inline-block;
+        z-index: 10;
+        width: 45%;
+        font-size: 50px;
+        color: gold;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: default;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .logo span {
+        color: #0ef;
+        font-size: 35px;
+    }
+
+    .navbar {
+        z-index: 10;
+        width: 55%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        animation: slideTop .5s ease forwards;
+    }
+
+    a:hover,
+    a.active {
+        color: rgb(52, 101, 105) !important;
+    }
+
+    .main {
+        width: 100%;
+        margin-top: 40px;
+        /* height: 100vh; */
+        /* background-color: rgb(196, 14, 241); */
+        display: flex;
+    }
+
+    .firstdiv {
+        width: 45%;
+        /* border: 2px dotted red; */
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+    .seconddiv {
+        width: 45%;
+        /* background-color: chartreuse; */
+        margin-left: 60px;
+    }
+
+    .name {
+        margin-left: 50px;
+        font-size: 30px;
+        color: #0ef;
+
+    }
+
+    .email {
+        margin-left: 50px;
+        font-size: 30px;
+        color: #0ef;
+    }
+
+    .message {
+        margin-left: 50px;
+        font-size: 30px;
+        color: #0ef;
+    }
+
+    .field {
+        width: 70%;
+        height: 7vh;
+        border: 4px dotted #0ef;
+        border-radius: 10px;
+    }
+
+    .send-button {
+        /* border: 2px solid  #0ef; */
+        display: flex;
+        height: 40px;
+
+    }
+
+    button {
+        width: 40%;
+        margin-left: 8%;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(0, 238, 255, 0.39);
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .send-button button:hover {
+        background-color: gold;
+    }
+
+
+    .logon {
+        /* border: 3px solid red; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 30px;
+
+
+    }
+
+    .logon a {
+
+        color: #0ef;
+        transition: .3s ease;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    .first-div {
+        width: 49%;
+        height: 50vh;
+        /* border: 2px solid yellow; */
+        margin-top: 45px;
+    }
+
+    .second-div {
+        width: 49%;
+        height: 50vh;
+        /* border: 2px solid green; */
+        margin-top: 45px;
+    }
+
+    .photo {
+        width: 80%;
+        height: 15vh;
+        /* border: 2px solid violet; */
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 20px;
+
+
+    }
+
+    .phone {
+        width: 80%;
+        height: 10vh;
+        /* border: 2px solid rgb(232, 128, 11); */
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        margin-left: 20px;
+        color: #0ef;
+    }
+
+    .number {
+        width: 80%;
+        height: 10vh;
+        /* border: 2px solid rgb(11, 22, 232); */
+        margin-left: 20px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color: #0ef;
+    }
+
+    .email {
+        margin-top: 30px;
+    }
+
+    .my-email {
+        color: #0ef;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">Contact<span>Me</span></div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skill.html">Skills</a>
+            <a href="#!">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- hamburger for mobile screen -->
+    </header>
+    <div class="main">
+        <div class="firstdiv">
+            <div class="first-div">
+                <div class="photo">
+                    <img src="images/pngtree-handset-related-vector-glyph-icon-web-call-sign-vector-picture-image_10382512-removebg-preview.png"
+                        width="120" height="110">
+                </div>
+                <div class="phone">
+                    <h4>Phone Nu</h4>
+                </div>
+                <div class="number">
+                    <h4>7004433769</h4>
+                </div>
+            </div>
+            <div class="second-div">
+                <div class="email">
+                    <img src="images/images-removebg-preview.png" width="200" height="100">
+                </div>
+                <div class="my-email">
+                    <h3>nihalkumar7801@gmail.com</h3>
+                </div>
+            </div>
+        </div>
+        <div class="seconddiv">
+            <div class="name">
+                <label>Full Name</label><br>
+                <input type="text" class="field" placeholder="Your name">
+            </div><br>
+            <div class="email">
+                <label>Your Email</label><br>
+                <input type="email" class="field" placeholder="enter your email">
+            </div><br>
+            <div class="message">
+                <label>Message</label><br>
+                <textarea type="text" class="field" placeholder="any message"></textarea>
+            </div>
+            <div class="send-button">
+                <button>Send me</button>
+            </div>
+            <div class="logon">
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+
+</html>
